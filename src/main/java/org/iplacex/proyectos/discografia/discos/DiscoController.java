@@ -56,8 +56,7 @@ public class DiscoController {
 
     @GetMapping(
             value = "/artista/{id}/discos",
-            produces = MediaType.APPLICATION_JSON_VALUE,
-            consumes = MediaType.APPLICATION_JSON_VALUE
+            produces = MediaType.APPLICATION_JSON_VALUE
     )
     List<Disco> HandleGetDiscosByArtista(
             @PathVariable("id") String idArtista
